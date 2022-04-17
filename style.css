@@ -24,7 +24,7 @@ body {
 
 section#name {
   /*background-color: #eee;*/
-  height: 35vh;
+  height: 40vh;
   border-bottom: 1px solid #eee;
   margin-bottom: 10px;
 }
@@ -32,7 +32,7 @@ section#name {
 .apresentacao {
   /*background-color: red;*/
   position: relative;
-  top: 80px;
+  top: 100px;
   text-align: center;
   padding-bottom: 6px;
   font-family: "Roboto", sans-serif;
@@ -41,10 +41,10 @@ section#name {
 
 .apresentacao h1 {
   margin: 0;
-  margin-bottom: 10px;  
+  margin-bottom: 10px;
   font-size: 60px;
-  font-weight: bold;  
-  color: 	#483D8B;
+  font-weight: bold;
+  color: #483d8b;
   font-weight: 900;
 }
 
@@ -61,10 +61,36 @@ section#atribuicao {
   display: block;
   text-align: center;
   margin-bottom: 20px;
-  color: #483D8B;
+  color: #483d8b;
   text-decoration: underline;
   font-size: 26px;
   font-family: "Roboto" sans-serif;
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  body {
+    /*background-color: red;*/
+  }
+
+  section#atribuicao {
+    /*background-color: #483d8b;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 300px;*/
+    height: 100vh;
+  }
+
+  section#atribuicao div {
+    margin-bottom: 5px;
+  }
+
+  .apresentacao {
+    height: 30vh;
+    top: 80px;
+  }
+
+  .apresentacao h1 {
+  }
+}
